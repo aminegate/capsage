@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fiche Clients</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i">
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- font - fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.2.0/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.3/css/responsive.dataTables.min.css">
+</head>
+<body>
+   
+   
+    <div class="page-wrapper chiller-theme toggled">
+        <!------------------------------------------------------------------------->
+        <!--------------------- Show Sidebar Button / Start ----------------------->
+        <!------------------------------------------------------------------------->
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <!------------------------------------------------------------------------->
+        <!---------------------- Show Sidebar Button / End ------------------------>
+        <!------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------->
+        <!------------------------- Sidebar Menu / Start -------------------------->
+        <!------------------------------------------------------------------------->
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <!----------------------------------------------------------------->
+                <!------------------ Sidebar Menu Header / Start ------------------>
+                <!----------------------------------------------------------------->
+                <div class="sidebar-brand">
+                    <a href="#">CAPRAM</a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <!----------------------------------------------------------------->
+                <!------------------- Sidebar Menu Header / End ------------------->
+                <!----------------------------------------------------------------->
+                <!----------------------------------------------------------------->
+                <!-------------------- Sidebar Menu Body / End -------------------->
+                <!----------------------------------------------------------------->
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>Navigation</span>
+                        </li>
+                        <li class="sidebar-dropdown highlight">
+                            <a href="index.html">
+                                <i class="fa-solid fa-file-contract"></i>
+                                <span>Fiche Client</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!----------------------------------------------------------------->
+                <!-------------------- Sidebar Menu Body / End -------------------->
+                <!----------------------------------------------------------------->
+                <!----------------------------------------------------------------->
+                <!------------------ Sidebar Menu Footer / Start ------------------>
+                <!----------------------------------------------------------------->
+                <div class="sidebar-footer">
+                    <a href="#">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-power-off"></i>
+                    </a>
+                </div>
+                <!----------------------------------------------------------------->
+                <!------------------- Sidebar Menu Footer / End ------------------->
+                <!------------------- Sidebar Menu Footer / End ------------------->
+                <!----------------------------------------------------------------->
+            </div>
+        </nav>
+        <!------------------------------------------------------------------------->
+        <!------------------------- Sidebar Menu / Start -------------------------->
+        <!------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------->
+        <!--------------------------- Main Page / Start --------------------------->
+        <!------------------------------------------------------------------------->
+        <main class="page-content">
+            <div class="container-fluid">
+                <!----------------------------------------------------------------->
+                <!------------------ Fiche Client Header / Start ------------------>
+                <!----------------------------------------------------------------->
+                <div class="topHeaderWrapper">
+                    <form>
+                        <div class="row">
+                            <!----------------------------------------------------->
+                            <!------------ Fiche Client Inputs / Start ------------>
+                            <!----------------------------------------------------->
+                            <div class="col-lg-6">
+                                <div class="inputsWrapper">
+                                    <div class="row">
+                                        <!-------------- Client Datalist -------------->
+                                        <div class="col-lg-12">
+                                            <div class="custom-fieldset client-fieldset">
+                                                <label for="client">Clients</label>
+                                                <input list="clients" name="client" id="client" placeholder="Sélectionnez un client">
+                                                <datalist id="clients">
+                                                    <option value="-------- - NADOR - 104750">
+                                                    <option value="------- - TAOUNATE - 146164">
+                                                    <option value="*********** - CASABLANCA - 032817">
+                                                    <option value="064900 - CASABLANCA - 064900">
+                                                    <option value="37 PIECES AUTOS - CASABLANCA - 033950">
+                                                </datalist>
+                                            </div>
+                                        </div>
+                                        <!---------------- Date Début ----------------->
+                                        <div class="col-lg-6">
+                                            <div class="custom-fieldset date-debut-fieldset">
+                                                <label for="date_debut">Date Début</label>
+                                                <input type="date" id="date_debut" name="date_debut">
+                                            </div>
+                                        </div>
+                                        <!----------------- Date Fin ------------------>
+                                        <div class="col-lg-6">
+                                            <div class="custom-fieldset date-fin-fieldset">
+                                                <label for="date_fin">Date Fin</label>
+                                                <input type="date" id="date_fin" name="date_fin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------------------------------------->
+                            <!------------ Fiche Client Inputs / End -------------->
+                            <!----------------------------------------------------->
+                            <!----------------------------------------------------->
+                            <!--------- Fiche Client Radio button / Start --------->
+                            <!----------------------------------------------------->
+                            <div class="col-lg-2">
+                                <div class="radioWrapper">
+                                    <div class="row">
+                                        <!----------------- Fact + BL ----------------->
+                                        <div class="col-lg-12">
+                                            <div class="custom-fieldset radioButton-fieldset">
+                                                <p>Selectionner Une Option</p>
+                                                <div class="radio-container">
+                                                    <label class="radio-option">
+                                                        <input type="radio" id="fact" name="vertical-radio" value="option1">
+                                                        <span class="slider"></span>
+                                                        <span class="label-text">Fact</span>
+                                                    </label>
+                                                    <label class="radio-option">
+                                                        <input type="radio" id="bl" name="vertical-radio" value="option2">
+                                                        <span class="slider"></span>
+                                                        <span class="label-text">BL</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------------------------------------->
+                            <!---------- Fiche Client Radio button / End ---------->
+                            <!----------------------------------------------------->
+                            <!----------------------------------------------------->
+                            <!----------- Fiche Client Icons / Start -------------->
+                            <!----------------------------------------------------->
+                            <div class="col-lg-4">
+                                <div class="buttonsWrapper">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="custom-fieldset buttons-fieldset">
+                                                <div class="buttons-container">
+                                                    <button id="search-btn">
+                                                        <div class="fontAwesomeWrapper"><i class="fas fa-search"></i></div> Rechercher
+                                                    </button>
+                                                    <button id="print-btn">
+                                                        <div class="fontAwesomeWrapper"><i class="fas fa-print"></i></div> Imprimer
+                                                    </button>
+                                                    <button id="edit-btn">
+                                                        <div class="fontAwesomeWrapper"><i class="fa-solid fa-pen-to-square"></i></div> Edit Perso
+                                                    </button>
+                                                    <button id="ceil-btn">
+                                                        <div class="fontAwesomeWrapper"><i class="fa-solid fa-window-maximize"></i></div> Plafond
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------------------------------------->
+                            <!------------ Fiche Client Icons / End --------------->
+                            <!----------------------------------------------------->
+                        </div>
+                    </form>
+                </div>
+                <!----------------------------------------------------------------->
+                <!------------------- Fiche Client Header / End ------------------->
+                <!----------------------------------------------------------------->
+                <!----------------------------------------------------------------->
+                <!------------------- Fiche Client Body / Start ------------------->
+                <!----------------------------------------------------------------->
+        <!------------------------------------------------------------------------->
+        <!--------------------------- Main Page / Start --------------------------->
+        <!------------------------------------------------------------------------->
+                <table id="table__fiche__clients" class="display responsive nowrap">
+                    <thead>
+                        <tr>
+                            <th>Operation</th>
+                            <th>Date Mvt</th>
+                            <th>N° Piece</th>
+                            <th>Date Ech</th>
+                            <th>T</th>
+                            <th>Mod</th>
+                            <th>Intitule</th>
+                            <th>Mont Debit</th>
+                            <th>Mont Credit</th>
+                            <th>Solde</th>
+                            <th>N° Cheque</th>
+                            <th>Tireur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+
+                            </td>
+                            <td data-th="Mod">
+                                000
+                            </td>
+                            <td data-th="Intitule">
+                                REPORT
+                            </td>
+                            <td data-th="Mont Debit">
+
+                            </td>
+                            <td data-th="Mont Credit">
+
+                            </td>
+                            <td data-th="Solde">
+                                0,00
+                            </td>
+                            <td data-th="N° Cheque">
+
+                            </td>
+                            <td data-th="Tireur">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+                                44
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                FACTURE N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+                                1914,77
+                            </td>
+                            <td data-th="Mont Credit">
+
+                            </td>
+                            <td data-th="Solde">
+                                1914,77
+                            </td>
+                            <td data-th="N° Cheque">
+
+                            </td>
+                            <td data-th="Tireur">
+                                MAG N° 106 AIN BILAL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                REG FACT N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+
+                            </td>
+                            <td data-th="Mont Credit">
+                                1914,77
+                            </td>
+                            <td data-th="Solde">
+                                12171,80
+                            </td>
+                            <td data-th="N° Cheque">
+                                0167475
+                            </td>
+                            <td data-th="Tireur">
+                                C/R S.D.T
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                REG FACT N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+
+                            </td>
+                            <td data-th="Mont Credit">
+                                1914,77
+                            </td>
+                            <td data-th="Solde">
+                                12171,80
+                            </td>
+                            <td data-th="N° Cheque">
+                                0167475
+                            </td>
+                            <td data-th="Tireur">
+                                C/R S.D.T
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+                                44
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                FACTURE N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+                                1914,77
+                            </td>
+                            <td data-th="Mont Credit">
+
+                            </td>
+                            <td data-th="Solde">
+                                1914,77
+                            </td>
+                            <td data-th="N° Cheque">
+
+                            </td>
+                            <td data-th="Tireur">
+                                MAG N° 106 AIN BILAL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+                                44
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                FACTURE N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+                                1914,77
+                            </td>
+                            <td data-th="Mont Credit">
+
+                            </td>
+                            <td data-th="Solde">
+                                1914,77
+                            </td>
+                            <td data-th="N° Cheque">
+
+                            </td>
+                            <td data-th="Tireur">
+                                MAG N° 106 AIN BILAL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+                                44
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                FACTURE N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+                                1914,77
+                            </td>
+                            <td data-th="Mont Credit">
+
+                            </td>
+                            <td data-th="Solde">
+                                1914,77
+                            </td>
+                            <td data-th="N° Cheque">
+
+                            </td>
+                            <td data-th="Tireur">
+                                MAG N° 106 AIN BILAL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+                                44
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                AVOIR N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+
+                            </td>
+                            <td data-th="Mont Credit">
+                                1914,77
+                            </td>
+                            <td data-th="Solde">
+                                12171,80
+                            </td>
+                            <td data-th="N° Cheque">
+                                COMPENSATION
+                            </td>
+                            <td data-th="Tireur">
+                                MAG N° 106 AIN BILAL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                REG FACT N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+
+                            </td>
+                            <td data-th="Mont Credit">
+                                1914,77
+                            </td>
+                            <td data-th="Solde">
+                                12171,80
+                            </td>
+                            <td data-th="N° Cheque">
+                                0167475
+                            </td>
+                            <td data-th="Tireur">
+                                C/R S.D.T
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+                                44
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                FACTURE N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+                                1914,77
+                            </td>
+                            <td data-th="Mont Credit">
+
+                            </td>
+                            <td data-th="Solde">
+                                1914,77
+                            </td>
+                            <td data-th="N° Cheque">
+
+                            </td>
+                            <td data-th="Tireur">
+                                MAG N° 106 AIN BILAL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+                                44
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                FACTURE N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+                                1914,77
+                            </td>
+                            <td data-th="Mont Credit">
+
+                            </td>
+                            <td data-th="Solde">
+                                1914,77
+                            </td>
+                            <td data-th="N° Cheque">
+
+                            </td>
+                            <td data-th="Tireur">
+                                MAG N° 106 AIN BILAL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+                                44
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                FACTURE N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+                                1914,77
+                            </td>
+                            <td data-th="Mont Credit">
+
+                            </td>
+                            <td data-th="Solde">
+                                1914,77
+                            </td>
+                            <td data-th="N° Cheque">
+
+                            </td>
+                            <td data-th="Tireur">
+                                MAG N° 106 AIN BILAL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+                                44
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                AVOIR N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+
+                            </td>
+                            <td data-th="Mont Credit">
+                                1914,77
+                            </td>
+                            <td data-th="Solde">
+                                12171,80
+                            </td>
+                            <td data-th="N° Cheque">
+                            </td>
+                            <td data-th="Tireur">
+                                MAG N° 106 AIN BILAL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+                                44
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                FACTURE N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+                                1914,77
+                            </td>
+                            <td data-th="Mont Credit">
+
+                            </td>
+                            <td data-th="Solde">
+                                1914,77
+                            </td>
+                            <td data-th="N° Cheque">
+
+                            </td>
+                            <td data-th="Tireur">
+                                MAG N° 106 AIN BILAL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+                                44
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                FACTURE N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+                                1914,77
+                            </td>
+                            <td data-th="Mont Credit">
+
+                            </td>
+                            <td data-th="Solde">
+                                1914,77
+                            </td>
+                            <td data-th="N° Cheque">
+
+                            </td>
+                            <td data-th="Tireur">
+                                MAG N° 106 AIN BILAL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Operation">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="table_checkbox" />
+                                    <label for="customCheckbox"></label>
+                                </div>
+                            </td>
+                            <td data-th="Date Mvt">
+                                04/11/202
+                            </td>
+                            <td data-th="N° Piece">
+                                0224044568
+                            </td>
+                            <td data-th="Date Ech">
+                                01/01/1900
+                            </td>
+                            <td data-th="T">
+                                44
+                            </td>
+                            <td data-th="Mod">
+                                023
+                            </td>
+                            <td data-th="Intitule">
+                                FACTURE N° : 0224044214
+                            </td>
+                            <td data-th="Mont Debit">
+                                1914,77
+                            </td>
+                            <td data-th="Mont Credit">
+
+                            </td>
+                            <td data-th="Solde">
+                                1914,77
+                            </td>
+                            <td data-th="N° Cheque">
+
+                            </td>
+                            <td data-th="Tireur">
+                                MAG N° 106 AIN BILAL
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="debAndCredWrapper">
+                    <p>Deb :&nbsp;&nbsp;<span>1275403,85</span></p>
+                    <p>Cred :&nbsp;&nbsp;<span>1201257,89</span></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.3/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.print.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.html5.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
