@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blocage et déblocage</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i">
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- font - fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.2.0/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.3/css/responsive.dataTables.min.css">
+</head>
+<body>
+   
+   
+    <div class="page-wrapper chiller-theme toggled">
+        <!------------------------------------------------------------------------->
+        <!--------------------- Show Sidebar Button / Start ----------------------->
+        <!------------------------------------------------------------------------->
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <!------------------------------------------------------------------------->
+        <!---------------------- Show Sidebar Button / End ------------------------>
+        <!------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------->
+        <!------------------------- Sidebar Menu / Start -------------------------->
+        <!------------------------------------------------------------------------->
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <!----------------------------------------------------------------->
+                <!------------------ Sidebar Menu Header / Start ------------------>
+                <!----------------------------------------------------------------->
+                <div class="sidebar-brand">
+                    <a href="#">CAPRAM</a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <!----------------------------------------------------------------->
+                <!------------------- Sidebar Menu Header / End ------------------->
+                <!----------------------------------------------------------------->
+                <!----------------------------------------------------------------->
+                <!-------------------- Sidebar Menu Body / End -------------------->
+                <!----------------------------------------------------------------->
+                 <div class="sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>Navigation</span>
+                        </li>
+                        <li class="sidebar-dropdown highlight">
+                            <a href="index.html">
+                                <i class="fa-solid fa-id-card"></i>
+                                <span>Fiche Client</span>
+                            </a>
+                            <a href="consultation.html">
+                                <i class="fa-solid fa-user-check"></i>
+                                <span>Consultation Client</span>
+                            </a>
+                            <a href="recherche.html">
+                                <i class="fa-solid fa-search"></i>
+                                <span>Recherche Designation</span>
+                            </a>
+                            <a href="fiche_article.html">
+                                <i class="fa-solid fa-box-open"></i>
+                                <span>Fiche Article</span>
+                            </a>
+                            <a href="tarif_fournisseur.html">
+                                <i class="fa-solid fa-handshake"></i>
+                                <span>Tarif Fournisseur</span>
+                            </a>
+                            <a href="tarif_famille.html">
+                                <i class="fa-solid fa-tags"></i>
+                                <span>Tarif Famille</span>
+                            </a>
+                            <a href="stock_famille.html">
+                                <i class="fa-solid fa-boxes-stacked"></i>
+                                <span>Stock Famille</span>
+                            </a>
+                            <a href="stock_fournisseur.html">
+                                <i class="fa-solid fa-warehouse"></i>
+                                <span>Stock Fournisseur</span>
+                            </a>
+                            <a href="visualisation_facture.html">
+                                <i class="fa-solid fa-file-invoice"></i>
+                                <span>Visualisation Facture</span>
+                            </a>
+                            <a href="visualisation_bon.html">
+                                <i class="fa-solid fa-receipt"></i>
+                                <span>Visualisation Bon</span>
+                            </a>
+                            <a href="journal_des_ventes.html">
+                                <i class="fa-solid fa-book"></i>
+                                <span>Journal des Ventes</span>
+                            </a>
+                            <a href="blocage_et_deblocage.html">
+                                <i class="fa-solid fa-lock-open"></i>
+                                <span>Blocage et Déblocage</span>
+                            </a>
+                            <a href="edition_etat_des_tarifs.html">
+                                <i class="fa-solid fa-file-lines"></i>
+                                <span>Edition Etat des tarifs</span>
+                            </a>
+                            <a href="maintenance_fiche_article.html">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <span>Maintenance Fiche Article</span>
+                            </a>
+                            <a href="article_de_substitution.html">
+                                <i class="fa-solid fa-repeat"></i>
+                                <span>Article de Substitution</span>
+                            </a>
+                            <a href="article_existants.html">
+                                <i class="fa-solid fa-list-check"></i>
+                                <span>Article Existants</span>
+                            </a>
+                            <a href="etat_des_stocks.html">
+                                <i class="fa-solid fa-chart-column"></i>
+                                <span>État des Stocks</span>
+                            </a>
+                            <a href="edition_stocks_biada.html">
+                                <i class="fa-solid fa-print"></i>
+                                <span>Edition Stocks Biada</span>
+                            </a>
+                            <a href="gestion_des_inventaires.html">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                <span>Gestion des Inventaires</span>
+                            </a>
+
+                            <a href="edition_des_inventaires.html">
+                                <i class="fa-solid fa-file-export"></i>
+                                <span>Edition des Inventaires</span>
+                            </a>
+                            <a href="gestion_des_sessions.html">
+                                <i class="fa-solid fa-users-gear"></i>
+                                <span>Gestion des Sessions</span>
+                            </a>
+                            <a href="editions.html">
+                                <i class="fa-solid fa-file-alt"></i>
+                                <span>Editions</span>
+                            </a>
+
+                            <a href="commissions.html">
+                                <i class="fa-solid fa-hand-holding-dollar"></i>
+                                <span>Commissions</span>
+                            </a>
+                            <a href="Panier.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Panier</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!----------------------------------------------------------------->
+                <!-------------------- Sidebar Menu Body / End -------------------->
+                <!----------------------------------------------------------------->
+                <!----------------------------------------------------------------->
+                <!------------------ Sidebar Menu Footer / Start ------------------>
+                <!----------------------------------------------------------------->
+                <div class="sidebar-footer">
+                    <a href="#" class="settings">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                    <a href="#" class="logOut">
+                        <i class="fa fa-power-off"></i>
+                    </a>
+                </div>
+                <!----------------------------------------------------------------->
+                <!------------------- Sidebar Menu Footer / End ------------------->
+                <!------------------- Sidebar Menu Footer / End ------------------->
+                <!----------------------------------------------------------------->
+            </div>
+        </nav>
+        <!------------------------------------------------------------------------->
+        <!------------------------- Sidebar Menu / Start -------------------------->
+        <!------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------->
+        <!--------------------------- Main Page / Start --------------------------->
+        <!------------------------------------------------------------------------->
+        <main class="page-content">
+            <div class="container-fluid">
+               <div class="titleWrapper">
+                   <h1>Blocage et déblocage</h1>
+               </div>
+                <!----------------------------------------------------------------->
+                <!------------------------- Header / Start ------------------------>
+                <!----------------------------------------------------------------->
+                <div class="topHeaderWrapper blocageDeblocageHeader">
+                    <form>
+                        <div class="row">
+                            <!----------------------------------------------------->
+                            <!------------------- Inputs / Start ------------------>
+                            <!----------------------------------------------------->
+                            <div class="col-lg-9">
+                               <div class="headerColumn theWrappers">
+                                    <div class="custom-items-wrapper">
+                                        <div class="custom-items selectItems">
+                                            <label for="depot">Depot</label>
+                                            <select name="depot" id="depot">
+                                                <option value="Depot Bd Khouribga">Depot Bd Khouribga</option>
+                                                <option value="Depot Biada">Depot Biada</option>
+                                                <option value="Depot 03">Depot 03</option>
+                                                <option value="Depot 04">Depot 04</option>
+                                                <option value="Depot 05">Depot 05</option>
+                                                <option value="Depot 06">Depot 06</option>
+                                                <option value="Depot 07">Depot 07</option>
+                                                <option value="Depot 08">Depot 08</option>
+                                                <option value="Depot 09">Depot 09</option>
+                                                <option value="Total">Total</option>
+                                            </select>
+                                        </div>
+                                        <label for="" class="readOnly flexAuto addMargin"></label>
+                                        <label for="" class="readOnly flexAuto addMargin"></label>
+                                    </div>
+                                    <div class="custom-items readOnlyItems addGap">
+                                        <label for="">N°Facture</label>
+                                        <label for="" class="readOnly flexAuto"></label>
+                                        <label for="" class="readOnly flexAuto"></label>
+                                    </div>
+                                    <div class="custom-items readOnlyItems addGap">
+                                        <label for="">Date Facture</label>
+                                        <label for="" class="readOnly flexAuto"></label>
+                                        <label for="" class="readOnly flexAuto"></label>
+                                    </div>
+                                    <div class="custom-items-wrapper">
+                                        <div class="custom-items readOnlyItems removeMarginBtm">
+                                            <label for="">Mode Regelement</label>
+                                            <label for="" class="readOnly flexAuto"></label>
+                                        </div>
+                                        <div class="custom-items readOnlyItems removeMarginBtm">
+                                            <label for="" class="toRight">Representant</label>
+                                            <label for="" class="readOnly flexAuto"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!----------------------------------------------------->
+                            <!-------------------- Inputs / End ------------------->
+                            <!----------------------------------------------------->
+                            <!----------------------------------------------------->
+                            <!------------------ Buttons / Start ------------------>
+                            <!----------------------------------------------------->
+                            <div class="col-lg-3">
+                                <div class="ficheArticleButtons">
+                                    <div class="buttons-container">
+                                        <button class="fixWidth">
+                                            <div class="fontAwesomeWrapper"><i class="fa-solid fa-pen-to-square"></i></div> Modification Depot
+                                        </button>
+                                        <button class="fixWidth">
+                                            <div class="fontAwesomeWrapper"><i class="fa-solid fa-lock"></i></div> Bloquer
+                                        </button>
+                                        <button class="fixWidth">
+                                            <div class="fontAwesomeWrapper"><i class="fa-solid fa-lock-open"></i></div> Debloquer
+                                        </button>
+                                        <button class="fixWidth">
+                                            <div class="fontAwesomeWrapper"><i class="fa-solid fa-list-check"></i></div> Bloquer/Debloquer Plusieurs
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------------------------------------->
+                            <!------------------ Buttons / End -------------------->
+                            <!----------------------------------------------------->
+                        </div>
+                    </form>
+                </div>
+                <!----------------------------------------------------------------->
+                <!-------------------------- Header / End ------------------------->
+                <!----------------------------------------------------------------->
+                <!----------------------------------------------------------------->
+                <!-------------------------- Body / Start ------------------------->
+                <!----------------------------------------------------------------->
+                <div class="dataTableWrapper reduceMarginTop">
+                    <table id="table__fiche__clients" class="display responsive nowrap">
+                    <thead>
+                        <tr>
+                            <th>Code Article</th>
+                            <th>Designation</th>
+                            <th>Qte</th>
+                            <th>Remise</th>
+                            <th>Prix Vente</th>
+                            <th>Montant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-th="Code Article">
+                                s-0200K
+                            </td>
+                            <td data-th="Designation" class="">
+                                <span class="tableDesi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quasi</span>
+                            </td>
+                            <td data-th="Qte">
+                               0
+                            </td>
+                            <td data-th="Remise">
+                                0
+                            </td>
+                            <td data-th="Prix Vente">
+                                4
+                            </td>
+                            <td data-th="Montant">
+                                0
+                            </td>   
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <!----------------------------------------------------------------->
+                <!-------------------------- Body / End --------------------------->
+                <!----------------------------------------------------------------->
+                <!----------------------------------------------------------------->
+                <!------------------------- Footer / Start ------------------------>
+                <!----------------------------------------------------------------->
+                <div class="montantInfo">
+                    <form action="">
+                        <fieldset>
+                            <legend>Montant HT</legend>
+                            <span>0.00</span>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Montant TVA</legend>
+                            <span>0.00</span>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Montant Transport</legend>
+                            <span>0.00</span>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Timbre</legend>
+                            <span>0.00</span>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Net Facture</legend>
+                            <span>0.00</span>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="mdpWrapper">
+                    <label for="">Mot de passe :</label>
+                    <input type="password">
+                </div>
+                <!----------------------------------------------------------------->
+                <!-------------------------- Footer / End ------------------------->
+                <!----------------------------------------------------------------->
+            </div>
+        </main>
+        <!------------------------------------------------------------------------->
+        <!---------------------------- Main Page / End ---------------------------->
+        <!------------------------------------------------------------------------->
+    </div>
+    
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.3/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.print.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.html5.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

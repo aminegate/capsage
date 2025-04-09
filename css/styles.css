@@ -1,17 +1,1544 @@
-.debAndCredWrapper {
+/********************************************************
+*                  MY LIBRARY / START                   *
+********************************************************/
+.flexAuto {
+    flex: auto !important;
+}
+
+.flexColumn {
+    flex-direction: column !important;
+}
+
+.heightAuto {
+    height: auto !important;
+}
+
+.addMargin {
+    margin-bottom: 20px !important;
+}
+
+.imgFit {
+    width: 90%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.flexBox {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.alignStart {
+    align-items: flex-start !important;
+}
+
+.justifyEnd {
+    justify-content: flex-end !important;
+}
+
+.removeMarginBtm {
+    margin-bottom: 0px !important;
+}
+
+.theWrappers {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    border-radius: 7px;
+    background: whitesmoke;
+    height: 100%;
+    position: relative;
+}
+
+.custom-items {
+    position: relative;
+    background: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.positionAbs {
+    position: absolute !important;
+    bottom: 4%;
+    width: 98.3% !important;
+}
+
+.pushToBottom {
+    margin-bottom: 50px;
+}
+
+.addGap {
+    gap: 15px;
+}
+
+.fixWidth {
+    width: 100% !important;
+}
+
+.fixHeight {
+    height: 100% !important;
+}
+
+.toRight {
+    text-align: right;
+    padding-right: 15px;
+}
+
+/********************************************************
+*                   MY LIBRARY / END                    *
+********************************************************/
+
+
+
+/********************************************************
+*                   BUTTONS / START                     *
+********************************************************/
+.squishy {
+    position: relative;
+    font-size: 17px;
+    padding: 3px 40px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 250ms;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: -6px;
+}
+
+.squishy-classic {
+    background-color: #31353d;
+    color: white;
+    border-radius: 0.5rem;
+    box-shadow:
+        inset 0 1px 0 0 #3b404a,
+        0 1px 0 0 #383d47,
+        0 2px 0 0 #353a44,
+        0 4px 0 0 #323741,
+        0 5px 0 0 #2f343e,
+        0 6px 0 0 #2c313b,
+        0 7px 0 0 #292e38,
+        0 7px 8px 0 #1f2229;
+}
+
+.squishy-classic:hover {
+    transform: translateY(4px);
+    box-shadow:
+        inset 0 1px 0 0 #3b404a,
+        0 1px 0 0 #383d47,
+        0 1px 0 0 #353a44,
+        0 2px 0 0 #323741,
+        0 2px 0 0 #2f343e,
+        0 3px 0 0 #2c313b,
+        0 4px 0 0 #292e38,
+        0 4px 6px 0 #1f2229;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #741c24 !important;
+    border-color: #dc3545;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #135e25 !important;
+    border-color: #1e7e34;
+}
+
+.custom-items button {
+    background: #31353d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.headerColumn button:hover {
+    background: #ccc;
+}
+
+/********************************************************
+*                    BUTTONS / END                      *
+********************************************************/
+
+
+
+/********************************************************
+*                  GLOBAL CSS / START                   *
+********************************************************/
+select {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 8px 10px;
+    outline: none;
+    width: 100%;
+}
+
+label {
+    flex: 0 0 15% !important;
+    margin: 0px;
+}
+
+input {
+    flex: 0 0 85% !important;
+}
+
+#dataListInput {
+    width: 100%;
+    padding: 9px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+/********************************************************
+*                   GLOBAL CSS / END                    *
+********************************************************/
+
+
+
+/********************************************************
+*                LINE SEPARATER / START                 *
+********************************************************/
+span.separater.separater-one {
+    position: absolute;
+    bottom: 13.6%;
+    width: 97% !important;
+}
+
+span.separater.separater-two {
+    margin-bottom: 0px;
+}
+
+span.separater.separater-three {
+    margin: 20px 10px;
+}
+
+span.separater.separater-four {
+    margin: 46px 10px 0px 10px;
+}
+
+span.separater {
+    display: block;
+    width: 98%;
+    padding: 0;
+    height: 1px;
+    background: #e1d6d6;
+    margin: 0px 10px 20px 10px;
+}
+
+/********************************************************
+*                 LINE SEPARATER / END                  *
+********************************************************/
+
+
+
+/********************************************************
+*                 FICHE CLIENT / START                  *
+********************************************************/
+.ficheClientHeader .inputDateItems:nth-child(1) label {
+    flex: 0 0 30% !important;
+}
+
+.ficheClientHeader .inputDateItems:nth-child(1) input {
+    flex: 0 0 70% !important;
+}
+
+.ficheClientHeader .inputDateItems:nth-child(2) label {
+    flex: 0 0 17% !important;
+}
+
+.ficheClientHeader .inputDateItems:nth-child(2) input {
+    flex: 0 0 83% !important;
+}
+
+/********************************************************
+*                  FICHE CLIENT / END                   *
+********************************************************/
+
+
+
+/********************************************************
+*                 CONSULTATION / START                  *
+********************************************************/
+.articleImage img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.articleImage {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 0px;
-    font-size: 20px;
-    font-weight: 600;
-    gap: 30px;
-    position: fixed;
-    bottom: 0;
-    left: 55%;
+    height: 100%;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    border-radius: 7px;
+    background: whitesmoke;
+}
+
+.articleBlock {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background: crimson;
+    color: white;
+    border-radius: 5px;
+    padding: 6px 15px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.articlePrice span:first-child,
+.articleDesi span:first-child,
+.articleFourni span:first-child,
+.articleFamille span:first-child {
+    font-weight: 500;
+    width: 120px;
+    display: flex;
+    justify-content: end;
+    margin-right: 7px;
+}
+
+.articleFamille {
+    margin-bottom: 0px !important;
+}
+
+.articlePrice span:nth-child(2),
+.articleDesi span:nth-child(2),
+.articleFourni span:nth-child(2),
+.articleFamille span:nth-child(2) {
     background: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #727272;
+}
+
+span.priceMode {
+    background: #9c9999;
+    color: white;
+    padding: 5px 15px;
+    margin-left: 10px;
+    border-radius: 6px;
+}
+
+.articlePrice,
+.articleDesi,
+.articleFourni,
+.articleFamille {
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 17px;
+    display: flex;
+}
+
+.consultFooter {
+    position: relative;
+}
+
+.consultFooterWrapper {
+    width: 23.5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal !important;
+    float: right;
+    gap: 20px;
+}
+
+.consultFooterWrapper input[type="text"] {
+    border: 1px solid lightgrey;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.purchaseButtonSection {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.number-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
     width: 100%;
-    transform: translateX(-50%);
+}
+
+.number-input button {
+    background-color: #e8e8e8;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.number-input button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.number-input input {
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+}
+
+/* Remove arrows from number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+button.articleBuy {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: orange;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/********************************************************
+*                  CONSULTATION / END                   *
+********************************************************/
+
+
+
+/********************************************************
+*                  RECHERCHE / START                    *
+********************************************************/
+input#gsearch {
+    width: 100%;
+    border: 0px;
+    padding: 8px 15px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+/********************************************************
+*                   RECHERCHE / END                     *
+********************************************************/
+
+
+
+/******************************************************** 
+*                 FICHE ARTICLE / START                 *
+********************************************************/
+.ficheArticleHeader .custom-items-wrapper:nth-child(2) .custom-items label {
+    flex: 0 0 22.5% !important;
+}
+
+.ficheArticleHeader .custom-items-wrapper:nth-child(2) .custom-items input {
+    flex: 0 0 77.5% !important;
+}
+
+/******************************************************** 
+*                  FICHE ARTICLE / END                  *
+********************************************************/
+
+
+
+/******************************************************** 
+*               TARIF FOURNISSEUR / START               *
+********************************************************/
+.tarifFournisseurHeader .custom-items label {
+    flex: 0 0 11% !important;
+}
+
+.tarifFournisseurHeader .custom-items input {
+    flex: 0 0 89% !important;
+}
+
+/******************************************************** 
+*                TARIF FOURNISSEUR / END                *
+********************************************************/
+
+
+
+/******************************************************** 
+*                 TARIF FAMILLE / START                 *
+********************************************************/
+.tarifFamilleHeader .custom-items label {
+    flex: 0 0 11% !important;
+}
+
+.tarifFamilleHeader .custom-items input {
+    flex: 0 0 89% !important;
+}
+
+/******************************************************** 
+*                  TARIF FAMILLE / END                  *
+********************************************************/
+
+
+
+/******************************************************** 
+*                 STOCK FAMILLE / START                 *
+********************************************************/
+.stockFamilleHeader .custom-items-wrapper .custom-items:nth-child(1) label {
+    flex: 0 0 17% !important;
+}
+
+.stockFamilleHeader .custom-items-wrapper .custom-items:nth-child(1) input {
+    flex: 0 0 83% !important;
+}
+
+/******************************************************** 
+*                  STOCK FAMILLE / END                  *
+********************************************************/
+
+
+
+/******************************************************** 
+*               STOCK FOURNISSEUR / START               *
+********************************************************/
+.stockFournisseurHeader .custom-items-wrapper .custom-items:nth-child(1) label {
+    flex: 0 0 17% !important;
+}
+
+.stockFournisseurHeader .custom-items-wrapper .custom-items:nth-child(1) input {
+    flex: 0 0 83% !important;
+}
+
+/******************************************************** 
+*                STOCK FOURNISSEUR / END                *
+********************************************************/
+
+
+
+
+.jrnlDesVentesHeader label.radio-title {
+    flex: 0 0 7.5% !important;
+    justify-content: left;
+}
+
+.jrnlDesVentesHeader .radio-group > :not(:first-child) {
+    flex: 0 0 21% !important;
+}
+
+/***************************************************
+*****************************************************/
+.visualisationFactureHeader .headerColumn .custom-items-wrapper:first-of-type .custom-items label[for="depot"] {
+    flex: 0 0 33% !important;
+}
+
+.visualisationFactureHeader .headerColumn .custom-items-wrapper:first-of-type .custom-items select#depot {
+    flex: 0 0 67% !important;
+}
+
+/* Target the first label in the third .custom-items (Date Facture) */
+.visualisationFactureHeader .headerColumn > .custom-items:nth-of-type(2) label:nth-of-type(1),
+.visualisationFactureHeader .headerColumn > .custom-items:nth-of-type(3) label:nth-of-type(1) {
+    flex: 0 0 9.5% !important;
+}
+
+/* Target the readOnly labels in the third .custom-items (Date Facture) */
+.visualisationFactureHeader .headerColumn > .custom-items:nth-of-type(2) label:nth-of-type(2),
+.visualisationFactureHeader .headerColumn > .custom-items:nth-of-type(3) label:nth-of-type(2) {
+    flex: 0 0 42.5% !important;
+}
+
+.visualisationFactureHeader .headerColumn .custom-items-wrapper:last-of-type label:nth-of-type(1) {
+    flex: 0 0 21% !important;
+}
+
+.visualisationFactureHeader .headerColumn .custom-items-wrapper:last-of-type label.readOnly:nth-of-type(2) {
+    flex: 0 0 79% !important;
+}
+
+.visualisationFactureHeader .buttons-container button {
+    padding: 33px 10px;
+}
+
+/***************************************************
+*****************************************************/
+.visualisationBonHeader .headerColumn .custom-items-wrapper:first-of-type .custom-items label[for="depot"] {
+    flex: 0 0 33% !important;
+}
+
+.visualisationBonHeader .headerColumn .custom-items-wrapper:first-of-type .custom-items select#depot {
+    flex: 0 0 67% !important;
+}
+
+/* Target the first label in the third .custom-items (Date Facture) */
+.visualisationBonHeader .headerColumn > .custom-items:nth-of-type(2) label:nth-of-type(1),
+.visualisationBonHeader .headerColumn > .custom-items:nth-of-type(3) label:nth-of-type(1) {
+    flex: 0 0 9.5% !important;
+}
+
+/* Target the readOnly labels in the third .custom-items (Date Facture) */
+.visualisationBonHeader .headerColumn > .custom-items:nth-of-type(2) label:nth-of-type(2),
+.visualisationBonHeader .headerColumn > .custom-items:nth-of-type(3) label:nth-of-type(2) {
+    flex: 0 0 43.5% !important;
+}
+
+.visualisationBonHeader .headerColumn .custom-items-wrapper:last-of-type label:nth-of-type(1) {
+    flex: 0 0 21% !important;
+}
+
+.visualisationBonHeader .headerColumn .custom-items-wrapper:last-of-type label.readOnly:nth-of-type(2) {
+    flex: 0 0 79% !important;
+}
+
+.visualisationBonHeader .buttons-container button {
+    padding: 33px 10px;
+}
+
+/***************************************************
+*****************************************************/
+.blocageDeblocageHeader .headerColumn .custom-items-wrapper:first-of-type .custom-items label[for="depot"] {
+    flex: 0 0 33% !important;
+}
+
+.blocageDeblocageHeader .headerColumn .custom-items-wrapper:first-of-type .custom-items select#depot {
+    flex: 0 0 67% !important;
+}
+
+/* Target the first label in the third .custom-items (Date Facture) */
+.blocageDeblocageHeader .headerColumn > .custom-items:nth-of-type(2) label:nth-of-type(1),
+.blocageDeblocageHeader .headerColumn > .custom-items:nth-of-type(3) label:nth-of-type(1) {
+    flex: 0 0 9.5% !important;
+}
+
+/* Target the readOnly labels in the third .custom-items (Date Facture) */
+.blocageDeblocageHeader .headerColumn > .custom-items:nth-of-type(2) label:nth-of-type(2),
+.blocageDeblocageHeader .headerColumn > .custom-items:nth-of-type(3) label:nth-of-type(2) {
+    flex: 0 0 42.5% !important;
+}
+
+.blocageDeblocageHeader .headerColumn .custom-items-wrapper:last-of-type label:nth-of-type(1) {
+    flex: 0 0 22% !important;
+}
+
+.blocageDeblocageHeader .headerColumn .custom-items-wrapper:last-of-type label.readOnly:nth-of-type(2) {
+    flex: 0 0 78% !important;
+}
+
+.blocageDeblocageHeader .buttons-container button {
+    padding: 6px 10px;
+}
+
+.stockFournisseurHeader .buttons-container button {
+    padding: 5px 10px;
+}
+
+.stockFamilleHeader .buttons-container button {
+    padding: 5px 10px;
+}
+
+/***************************************************
+*****************************************************/
+.editionEtatTarifHeader .headerColumn > .custom-items-wrapper .custom-items label {
+    flex: 0 0 8% !important;
+}
+
+.editionEtatTarifHeader .headerColumn > .custom-items-wrapper .custom-items input {
+    flex: 0 0 92% !important;
+}
+
+.editionEtatTarifHeader .headerColumn > .custom-items:nth-child(3) label {
+    flex: 0 0 8% !important;
+}
+
+.editionEtatTarifHeader .headerColumn > .custom-items:nth-child(3) input {
+    flex: 0 0 92% !important;
+}
+
+/***************************************************
+*****************************************************/
+.etatDesStocksHeader .headerColumn > .custom-items-wrapper .custom-items:nth-child(1) label {
+    /* styles here */
+    flex: 0 0 24% !important;
+}
+
+.etatDesStocksHeader .headerColumn > .custom-items-wrapper .custom-items:nth-child(1) input {
+    flex: 0 0 76% !important;
+}
+
+.etatDesStocksHeader .headerColumn > .custom-items label {
+    /* styles here */
+    flex: 0 0 12% !important;
+}
+
+.etatDesStocksHeader .headerColumn > .custom-items input {
+    flex: 0 0 88% !important;
+}
+
+
+.StocksBiadaHeader .custom-items.checkBoxItems label.checkbox-label:nth-child(1),
+.StocksBiadaHeader .custom-items.checkBoxItems label.checkbox-label:nth-child(2) {
+    gap: 50px;
+}
+
+.StocksBiadaHeader .selectItems label,
+.StocksBiadaHeader .dataListItems label {
+    flex: 0 0 8% !important;
+}
+
+.StocksBiadaHeader .selectItems input,
+.StocksBiadaHeader .dataListItems input {
+    flex: 0 0 92% !important;
+}
+
+.StocksBiadaHeader .inputDateItems label {
+    flex: 0 0 16% !important;
+}
+
+.StocksBiadaHeader .inputDateItems input {
+    flex: 0 0 84% !important;
+}
+
+.StocksBiadaHeader label.radio-title {
+    flex: 0 0 4.5% !important;
+    justify-content: left;
+}
+
+.StocksBiadaHeader .radio-group > :not(:first-child) {
+    flex: 0 0 13% !important;
+}
+
+
+/*******************************************
+*******************************************/
+.gestionDesinventairesHeader .selectItems label {
+    flex: 0 0 7.5% !important;
+}
+
+.gestionDesinventairesHeader .checkBoxItems .checkbox-label:first-child {
+    gap: 2px;
+    flex: 0 0 16% !important;
+}
+
+
+.gestionDesinventairesHeader .inputItems label:nth-child(1) {
+    flex: 0 0 6.4% !important;
+}
+
+.gestionDesinventairesHeader .inputItems input {
+    flex: 0 0 42% !important;
+}
+
+
+/***********************************************
+***********************************************/
+.editionDesinventairesHeader .selectItems label,
+.editionDesinventairesHeader .dataListItems label {
+    flex: 0 0 8% !important;
+}
+
+.editionDesinventairesHeader .checkBoxItems label:first-child span {
+    padding-right: 23px;
+}
+
+.editionDesinventairesHeader .dataListItems input {
+    flex: 0 0 92% !important;
+}
+
+
+.editionDesinventairesHeader .checkBoxItems .checkbox-label:first-child {
+    gap: 31px;
+    flex: 0 0 16% !important;
+}
+
+.editionsHeader .pushToBottom-one .inputNumberItems label {
+    flex: 0 0 7.3% !important;
+}
+
+.editionsHeader .pushToBottom-one .inputNumberItems input {
+    flex: 0 0 92.7% !important;
+}
+
+.editionsHeader .pushToBottom-three .selectItems label {
+    flex: 0 0 7.4% !important;
+}
+
+.editionDesinventairesHeader .inputItems label {
+    flex: 0 0 24.4% !important;
+}
+
+.editionDesinventairesHeader .inputItems input {
+    flex: 0 0 75.6% !important;
+}
+
+
+
+.gestionDesSessionsHeader .inputItems input {
+    flex: 0 0 100% !important;
+}
+
+
+
+
+
+
+select .firstRowInputs {
+    width: 100%:
+}
+
+.custom-items-wrappers {
+    width: 100%;
+}
+
+
+
+.jrnlDesVentesHeader .custom-items label.checkbox-label:first-child {
+    gap: 41px;
+    flex: 0 0 25% !important;
+}
+
+.jrnlDesVentesHeader .custom-items label.checkbox-label:last-child {
+    flex: 0 0 75% !important;
+    gap: 41px;
+}
+
+
+.jrnlDesVentesHeader .headerColumn .custom-items:nth-of-type(2) label[for="depot"] {
+    flex: 0 0 13% !important;
+}
+
+.jrnlDesVentesHeader .headerColumn .custom-items:nth-of-type(2) select#depot {
+    flex: 0 0 87% !important;
+}
+
+.jrnlDesVentesHeader .headerColumn .custom-items-wrapper .custom-items label {
+    flex: 0 0 26.23% !important;
+}
+
+.jrnlDesVentesHeader .headerColumn .custom-items-wrapper .custom-items input {
+    flex: 0 0 73.77% !important;
+}
+
+
+
+span.headerColumn-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+.articleDeSubstitutionHeader label {
+    flex: 0 0 9% !important;
+}
+
+.articleDeSubstitutionHeader input {
+    flex: 0 0 91% !important;
+}
+
+/******************************************************************
+*******************************************************************
+******************************************************************/
+
+.montantInfo {
+    margin-bottom: 50px;
+}
+
+.mdpWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    gap: 10px;
+}
+
+.mdpWrapper label {
+    margin: 0px;
+    white-space: nowrap;
+
+}
+
+.mdpWrapper input {
+    border: none;
+    background: #efefef;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+    color: black;
+    font-size: 17px;
+}
+
+.topHeaderWrapper-visualisation_blc-dblc .buttons-container button {
+    padding: 16.5px 10px;
+    font-size: 20px;
+}
+
+label.form-check-label {
+    white-space: nowrap;
+}
+
+.filter-container {
+    flex-direction: column;
+    align-items: normal !important;
+    height: 362px;
+    justify-content: flex-start;
+}
+
+.filter-list {
+
+    overflow-y: auto;
+    border: 1px solid #aaa;
+    background-color: white;
+    padding: 5px;
+}
+
+.TopHeader-one-wrapper {
+    width: 100%;
+}
+
+.topHeaderWrapper-journal .ficheArticleButtons .buttons-container button {
+    width: 48% !important;
+    font-size: 18px !important;
+    padding: 13.5px 0px;
+}
+
+.topHeaderWrapper-journal .ficheArticleButtons .buttons-container button:last-child {
+    width: 100% !important;
+
+}
+
+.topHeaderWrapper-journal .custom-items.date-debut-fieldset,
+.topHeaderWrapper-journal .custom-items.date-fin-fieldset {
+    margin-bottom: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.topHeaderWrapper-journal .custom-items.date-debut-fieldset label {
+    width: 35%;
+    margin: 0px;
+}
+
+.topHeaderWrapper-journal .custom-items.date-fin-fieldset label {
+    width: 25%;
+    margin-bottom: 0px;
+}
+
+.dateContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+.topHeaderWrapper-journal .depotWrapper {
+    justify-content: flex-start !important;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.checkbox-label input {
+    display: none;
+}
+
+.custom-checkbox {
+    width: 30px;
+    height: 30px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.checkbox-label input:checked + .custom-checkbox {
+    background-color: #f7943d;
+    border-color: #f7943d;
+}
+
+.checkbox-label input:checked + .custom-checkbox::after {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white !important;
+    font-size: 20px;
+}
+
+.checkbox-label:hover .custom-checkbox {
+    border-color: #f7943d;
+}
+
+.removeCenter {
+    justify-content: flex-start !important;
+}
+
+.topHeaderWrapper-journal .firstRowInputs .depotWrapper label {
+    width: 12.2% !important;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 0px;
+    width: 100%;
+    justify-content: center;
+}
+
+.radio-group input {
+    display: none;
+}
+
+.custom-radio {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.radio-group input:checked + .custom-radio {
+    border-color: #333;
+    background-color: white;
+}
+
+.radio-group input:checked + .custom-radio::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.radio-group label:hover .custom-radio {
+    border-color: #000;
+}
+
+
+/************************************/
+.bonStockId {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.bonStockId label {
+    margin: 0px;
+    width: 17%;
+}
+
+.bonStockId input {
+    border: 1px solid lightgrey;
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/***********************************/
+.montantInfo fieldset {
+    border: 1px solid lightgrey;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.montantInfo form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.montantInfo legend {
+    width: 55%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.montantInfo span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.topHeaderWrapper-visualisation_facture .buttons-container button {
+    padding: 50px 10px;
+    font-size: 25px;
+}
+
+.stockFamilleButtons .buttons-container {
+    height: auto !important;
+}
+
+th.stock_check_all.dt-orderable-none {
+    width: 80px;
+}
+
+.stockFamilleButtons .buttons-container button {
+
+    width: 100%;
+}
+
+.topHeaderWrapper-stock_famille .depotWrapper label {
+    width: 60px !important;
+}
+
+.topHeaderWrapper-stock_famille .inputsWrapper-fiche-article label {
+    width: 12% !important;
+}
+
+thead tr th,
+thead tr td {
+    position: relative;
+}
+
+.secondRowInputs,
+.thirdRowInputs,
+.firstRowInputs,
+.labelGroupOne,
+.labelGroupTwo {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+.secondRowInputs label:first-child,
+.thirdRowInputs label:first-child {
+    width: 24% !important;
+    margin: 0px;
+}
+
+.labelGroupOne label:first-child,
+.labelGroupTwo label:first-child {
+    width: 11.5% !important;
+    margin: 0px;
+}
+
+.firstRowInputs .depotWrapper label {
+    width: 53% !important;
+}
+
+/****************************************/
+.tarif_fourni_Img img {
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.topHeaderWrapper-tarif_fourni .ficheArticleTopHeader {
+    margin-bottom: 30px;
+}
+
+.tarif_fourni_Img {
+    background: white;
+    border-radius: 6px 6px 0px 0px;
+    padding: 15px;
+}
+
+.tarif_fourni_info span:first-child {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 17px;
+}
+
+.tarif_fourni_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    background: #ededed;
+    color: #31353d;
+    padding: 10px 7px;
+    border-radius: 0px 0px 6px 6px;
+}
+
+.tarif_fourni_product {
+    border-radius: 6px;
+    margin-bottom: 25px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.tarif_fourni_info span:last-child {
+    background: white;
+    color: black;
+    padding: 7px 10px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    border: 1px solid lightgrey;
+}
+
+.tarif_fourni_info span:nth-child(2) {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 200px;
+}
+
+.tarif_fourni_products {
+    padding: 25px !important;
+    margin-bottom: 30px;
+}
+
+/*********************************************/
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white !important;
+    background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat left 10px center;
+    background-position-x: 99%;
+    background-position-y: 7px;
+}
+
+.ficheArticleButtons .buttons-container {
+    height: auto !important;
+    gap: 15px !important;
+}
+
+input.inputText {
+    width: 100%;
+    border: 1px solid lightgrey;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.ficheArticleButtons .buttons-container button {
+
+    width: 100% !important;
+}
+
+select,
+input {
+    cursor: pointer;
+}
+
+.ficheArticleTopHeader-two .custom-items.date-debut-fieldset label {
+    width: 120px;
+    margin: 0px;
+}
+
+.ficheArticleTopHeader-two .custom-items.date-fin-fieldset label {
+    width: 90px;
+    margin: 0px;
+}
+
+.ficheArticleTopHeader-two .custom-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px !important;
+}
+
+.depotWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.ficheArticleTopHeader-two {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.depotWrapper label {
+    margin: 0px;
+    width: 107px;
+}
+
+.ficheArticleTopHeader {
+    gap: 20px;
+    flex-direction: column;
+}
+
+.inputsWrapper-fiche-article {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.readOnly {
+    width: 100%;
+    background: white;
+    height: 38px;
+    margin: 0px;
+    border-radius: 6px;
+    padding: 4px 10px;
+    color: grey;
+    font-size: 17px;
+    font-weight: 400 !important;
+    display: flex;
+    align-items: center;
+}
+
+.searchButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.searchButtons i {
+    background: white;
+    padding: 5px 10px;
+    font-size: 27px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+.ficheArticleTopHeader-one {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputsWrapper-fiche-article input {
+    border-radius: 5px !important;
+    border: 1px solid lightgrey !important;
+}
+
+.inputsWrapper-fiche-article label {
+    width: 15%;
+    margin: 0px;
+}
+
+.ficheArticleDesi {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ficheArticleDesi label {
+    margin: 0px;
+}
+
+/***********************************************/
+
+
+/*************************************************/
+
+
+#table__fiche__clients {
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+.consultFooterWrapper,
+.ficheArticleTopHeader,
+.ficheArticleButtons,
+.tarif_fourni_products,
+.filter-container {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    border-radius: 7px;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+.inputsWrapper-fiche-article button {
+    float: right;
+    padding: 6px 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+/***************************
+    progress start
+***************************/
+
+main.page-content {
+    position: relative;
+}
+
+.plafond {
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    width: 35%;
+    background: white;
+    left: 35%;
+    transform: translate(0%, -50%);
+}
+
+.positionRelative {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeProgress {
+    position: absolute;
+    top: 4%;
+    right: 1%;
+    background: lightgrey;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+progress {
+    height: 50px;
+    width: 250px;
+}
+
+.progressWrapper label,
+div#progressPercentage {
+    margin: 0px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.soldWrapper,
+.plafondWrapper {
+    font-weight: 500;
+}
+
+.soldWrapper span,
+.plafondWrapper span {
+    color: burlywood;
+}
+
+.progressOverlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: #0000008c;
+    display: none;
+}
+
+.soldPlafond {
+    display: flex;
+    gap: 40px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.progressWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/***************************
+   progress end
+***************************/
+
+/***************************
+    debit and credit start
+***************************/
+
+.debAndCredContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.toggled .debAndCredWrapper {
+    width: 90%;
 }
 
 .debAndCredWrapper span {
@@ -22,34 +1549,30 @@
     margin: 0px;
 }
 
+.debAndCredWrapper {
+    padding: 15px 0px;
+    font-size: 20px;
+    font-weight: 600;
+    position: fixed;
+    bottom: 0;
+    background: white;
+    width: 100%;
 
-
-
-.custom-checkbox {
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
-.custom-checkbox input[type="checkbox"] {
-  display: none;
-}
+/***************************
+    debit and credit end
+***************************/
 
-.custom-checkbox label {
-  cursor: pointer;
-  font-size: 16px;
-  color: #333;
-}
 
-table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
-    text-align: initial !important;
-}
-
+/***************************
+    Checbox Start
+***************************/
 .custom-checkbox label::before {
     content: '';
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 26px;
     height: 26px;
@@ -59,23 +1582,68 @@ table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataT
     transition: all 0.3s ease;
 }
 
+.custom-checkbox input[type="checkbox"]:checked + label::before {
+    background: #F7943D;
+    border-color: #F7943D;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label::after {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white !important;
+    font-size: 20px;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox label {
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+/***************************
+    checkbox end
+***************************/
+
+/***************************
+    Table Start
+***************************/
+
+table.dataTable th.dt-type-numeric,
+table.dataTable th.dt-type-date,
+table.dataTable td.dt-type-numeric,
+table.dataTable td.dt-type-date {
+    text-align: initial !important;
+}
+
 table.dataTable thead {
     background: #31353d;
     color: white;
     border-radius: 5px 5px 0px 0px;
 }
 
-.custom-checkbox input[type="checkbox"]:checked + label::before {
-  background: #F7943D;
-  border-color: #F7943D;
-}
-
 .dataTables_wrapper table {
     border-collapse: separate;
     border-spacing: 0;
-    border-radius: 10px; /* Adjust as needed */
+    border-radius: 10px;
+    /* Adjust as needed */
     overflow: hidden;
-    border: 1px solid #ddd; /* Optional: adds a border */
+    border: 1px solid #ddd;
+    /* Optional: adds a border */
 }
 
 button.dt-paging-button.current {
@@ -96,30 +1664,34 @@ thead th:last-child {
     -moz-border-radius-topright: 4px;
 }
 
-.custom-checkbox input[type="checkbox"]:checked + label::after {
-    content: '\f00c';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    color: white !important;
-    font-size: 20px;
-}
-
 .dt-paging {
     margin-top: 3% !important;
 }
 
-table.dataTable>tbody>tr>th, table.dataTable>tbody>tr>td {
+.dataTableWrapper .dt-buttons,
+.dataTableWrapper .dt-search,
+.dataTableWrapper .dt-paging {
+    display: none;
+}
+
+.dataTableWrapper .dataTable {
+    margin-top: 0% !important;
+}
+
+.dataTableWrapper div#table__fiche__clients_wrapper {
+    padding: 10px !important;
+    margin-bottom: 35px;
+}
+
+table.dataTable > tbody > tr > th,
+table.dataTable > tbody > tr > td {
     padding: 15px 10px !important;
-        position: relative;
+    position: relative;
 }
 
 div#table__fiche__clients_wrapper {
     width: 100%;
-    margin-top: 2%;
+    margin-top: 1%;
     background: whitesmoke;
     padding: 20px 10px 10px 10px;
     border-radius: 10px;
@@ -132,11 +1704,22 @@ div.dt-container .dt-search input {
 }
 
 .dataTable {
-    margin-top: 3% !important;
+    margin-top: 1% !important;
 }
 
+span.tableDesi {
+    width: 245px;
+    display: block;
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    overflow: hidden;
+    /* Hides overflow text */
+    text-overflow: ellipsis;
+    /* Adds "..." for overflow */
+}
 
-.dt-buttons, .dt-search {
+.dt-buttons,
+.dt-search {
     width: 50%;
     display: inline-block;
 }
@@ -150,89 +1733,54 @@ button.dt-button {
     background: white !important;
 }
 
-div.dt-buttons>.dt-button:focus:not(.disabled), div.dt-buttons>div.dt-button-split .dt-button:focus:not(.disabled) {
+div.dt-buttons > .dt-button:focus:not(.disabled),
+div.dt-buttons > div.dt-button-split .dt-button:focus:not(.disabled) {
     outline: none !important;
 }
-/*********** Global + Animation ************/
 
-.inputsWrapper,
-.radioWrapper,
-.buttonsWrapper{
-    border: 1px solid lightgrey;
-    padding: 10px;
-    border-radius: 7px;
-        height: 100%;
-    background: whitesmoke;
-}
+/***************************
+    Table End
+***************************/
 
-.fontAwesomeWrapper i {
-    color: #F7943D;
-}
-
-.topHeaderWrapper {
-    height: 189px;
-}
-
-.buttons-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 167px;
-}
-
-
-.buttons-container button {
-    padding: 6px 10px;
-    font-size: 20px;
-    cursor: pointer;
-    border: none;
-    background-color: #31353D;
-    color: white;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 47%;
-    font-weight: 500;
-}
+/***************************
+    Radio Button Start
+***************************/
 
 /* Radio Button Container */
 .radio-container {
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
-    
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
 
-.custom-fieldset.radioButton-fieldset p {
+.custom-items p {
     margin: 0px 0px 9px 0px;
     margin-bottom: 15px;
+    line-height: 11px;
 }
 
 /* Radio Option Styling */
 .radio-option {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
     margin: 0px;
 }
 
 /* Hide Default Radio Button */
 .radio-option input {
-  display: none;
+    display: none;
 }
 
 /* Custom Slider */
 .slider {
-  width: 80px;
-  height: 35px;
-  background-color: white;
-  border-radius: 20px;
-  position: relative;
-  transition: background-color 0.3s ease;
+    width: 80px;
+    height: 35px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    transition: background-color 0.3s ease;
     border: 1px solid lightgrey;
 }
 
@@ -253,37 +1801,53 @@ div.dt-buttons>.dt-button:focus:not(.disabled), div.dt-buttons>div.dt-button-spl
 .label-text {
     margin-left: 10px;
     font-size: 16px;
-   color: #2d2d2d;
+    color: #2d2d2d;
 }
 
 /* Selected State */
 .radio-option input:checked + .slider {
-  background-color: #F7943D;
+    background-color: #F7943D;
 }
 
 .radio-option input:checked + .slider::before {
-  transform: translateX(40px);
-  background-color: #fff;
+    transform: translateX(40px);
+    background-color: #fff;
 }
+
+/***************************
+    Radio Button End
+***************************/
+
+/***************************
+    Global CSS Start
+***************************/
+
 
 body {
     font-size: 0.9rem;
 }
 
 label,
-.custom-fieldset.radioButton-fieldset p{
+.custom-items p {
     font-weight: 600;
 }
 
 
-input:focus,button:focus {
+
+
+input:focus,
+button:focus {
     outline: none;
 }
 
 
-.custom-fieldset {
-    position: relative;
-    background: whitesmoke;
+
+.custom-items-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
 }
 
 .custom-legend {
@@ -292,8 +1856,7 @@ input:focus,button:focus {
     color: #333;
 }
 
-.custom-fieldset input {
-    border: none;
+.custom-items input {
     outline: none;
     width: 100%;
     color: grey;
@@ -303,16 +1866,54 @@ input:focus,button:focus {
     border-radius: 5px;
 }
 
-/********** fiche client *********/
 
-.custom-fieldset.client-fieldset,
-.custom-fieldset.date-debut-fieldset,
-.custom-fieldset.date-fin-fieldset{
+
+.fontAwesomeWrapper i {
+    color: #F7943D;
+}
+
+
+.buttons-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.buttons-container button {
+    padding: 11px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #31353D;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+    width: 47%;
+}
+
+/***************************
+    Global CSS End
+***************************/
+
+/***************************
+    Fiche Client page
+***************************/
+
+.custom-items.client-fieldset,
+.custom-items.date-debut-fieldset,
+.custom-items.date-fin-fieldset {
     width: 100%;
     margin-bottom: 15px;
 }
 
-.custom-fieldset.date-fin-fieldset{
+.custom-items.date-fin-fieldset {
     margin-bottom: 0px;
 }
 
@@ -329,12 +1930,18 @@ li.sidebar-dropdown a span {
 }
 
 .active-span {
-    color: #F7943D  !important;
+    color: #F7943D !important;
     font-weight: 600;
 }
 
 .active-icon {
-    color: #F7943D  !important;
+    color: #F7943D !important;
+}
+
+.activem {
+    color: #16c7ff !important;
+    text-shadow: 0px 0px 10px rgba(22, 199, 255, 0.5);
+    transition: none !important;
 }
 
 /*===== Search bar ===*/
@@ -344,12 +1951,12 @@ li.sidebar-dropdown a span {
     margin: 30px auto;
 }
 
-.searchWrapper .search-input{
+.searchWrapper .search-input {
     background: #fff;
     width: 85%;
-    border-radius : 5px;
+    border-radius: 5px;
     position: relative;
-    box-shadow: Opx 1px 5px 3px rgba(0,0,0,0. 12);
+    box-shadow: Opx 1px 5px 3px rgba(0, 0, 0, 0. 12);
     margin: 0px auto;
 }
 
@@ -366,21 +1973,21 @@ li.sidebar-dropdown a span {
     background: whitesmoke;
 }
 
-.search-input.active input{
-    border-radius : 5px 5px 0 0;
+.search-input.active input {
+    border-radius: 5px 5px 0 0;
 }
 
-.search-input.active .autocom-box{
+.search-input.active .autocom-box {
     padding: 10px 8px;
     opacity: 1;
-    pointer-events: auto ;
+    pointer-events: auto;
 }
 
-.search-input.active .autocom-box li{
+.search-input.active .autocom-box li {
     display: block;
 }
 
-.search-input .icon{
+.search-input .icon {
     position: absolute;
     right: 0px;
     top: 0px;
@@ -458,6 +2065,7 @@ li.sidebar-dropdown a span {
     border-radius: 0 4px 4px 0px;
     width: 35px;
     transition-delay: 0.3s;
+    z-index: 9999;
 }
 
 .page-wrapper.toggled #show-sidebar {
@@ -467,7 +2075,7 @@ li.sidebar-dropdown a span {
 /*----------------sidebar-wrapper----------------*/
 
 .sidebar-wrapper {
-    width: 260px;
+    width: 210px;
     height: 100%;
     max-height: 100%;
     position: fixed;
@@ -584,11 +2192,13 @@ li.sidebar-dropdown a span {
 }
 
 .sidebar-wrapper .sidebar-menu ul li a {
-    display: inline-block;
+    display: flex;
     width: 100%;
     text-decoration: none;
     position: relative;
-    padding: 8px 30px 8px 20px;
+    padding: 8px 10px 8px 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidebar-wrapper .sidebar-menu ul li a i {
@@ -653,14 +2263,97 @@ li.sidebar-dropdown a span {
     right: 17px;
 }
 
+
+
+
+
+
+
+
+
+
+
+.titleWrapper h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.titleWrapper h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+}
+
+.titleWrapper h1 em {
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+.titleWrapper h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.titleWrapper h1:after,
+.titleWrapper h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #c7c7c7;
+    border-top: 1px solid #c7c7c7;
+    height: 5px;
+    background-color: #f8f8f8;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------------side-footer------------------------------*/
 
 .sidebar-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    position: fixed;
+    width: 10.9%;
+    bottom: 0%;
     display: flex;
 }
+
+li.sidebar-dropdown.highlight {
+    padding: 10px 0px 30px;
+}
+
+a.logOut i {
+    color: #f7943d;
+}
+
+a.settings i {
+    color: white;
+}
+
 
 .sidebar-footer > a {
     flex-grow: 1;
@@ -708,12 +2401,10 @@ li.sidebar-dropdown a span {
 }
 
 .page-wrapper .page-content > div {
-    padding: 0px 40px;
+    padding: 0px 15px;
 }
 
-.page-wrapper .page-content {
-   
-}
+.page-wrapper .page-content {}
 
 /*------scroll bar---------------------*/
 
@@ -788,7 +2479,7 @@ li.sidebar-dropdown a span {
     color: #818896;
 }
 
-.chiller-theme .sidebar-wrapper .sidebar-menu ul li:hover > a,
+
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a,
 .chiller-theme .sidebar-wrapper .sidebar-header .user-info,
 .chiller-theme .sidebar-wrapper .sidebar-brand > a:hover,
@@ -804,7 +2495,13 @@ li.sidebar-dropdown a span {
     color: #ffffff;
 }
 
-.chiller-theme .sidebar-wrapper ul li:hover a i,
+.chiller-theme .sidebar-wrapper ul li a:hover i,
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li > a:hover {
+    color: #16c7ff;
+    text-shadow: 0px 0px 10px rgba(22, 199, 255, 0.5);
+}
+
+
 .chiller-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
 .chiller-theme .sidebar-wrapper .sidebar-search input.search-menu:focus + span,
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i {
@@ -840,25 +2537,25 @@ li.sidebar-dropdown a span {
 /********************** Media Query Start **************************/
 
 @media screen and (min-width:992px) {
-  .page-wrapper.toggled .page-content {
-    padding-left: 240px;
-  }
+    .page-wrapper.toggled .page-content {
+        padding-left: 210px;
+    }
 }
 
 /* Responsive for medium screens (MD) */
 @media (max-width: 768px) {
-  .pagination a {
-    padding: 8px 14px;
-    font-size: 14px;
-  }
+    .pagination a {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
 }
 
 /* Responsive for small screens (SM) */
 @media (max-width: 480px) {
-  .pagination a {
-    padding: 6px 10px;
-    font-size: 12px;
-  }
+    .pagination a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
 }
 
 
