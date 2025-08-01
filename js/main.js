@@ -1,4 +1,44 @@
 $(document).ready(function () {
+    
+      $('.toggle-password').on('click', function() {
+        const $wrapper = $(this).closest('.mdpWrapper');
+        const $input = $wrapper.find('input');
+        const isPassword = $input.attr('type') === 'password';
+
+        $input.attr('type', isPassword ? 'text' : 'password');
+        $(this).toggleClass('fa-eye-slash fa-eye');
+    });
+    
+    //menu scroll
+(function ($) {
+  // Step 1: Save clicked link BEFORE page unload
+  $(document).on('click', '.menu-link', function () {
+    localStorage.setItem('activeLink', $(this).attr('href'));
+  });
+
+  // Step 2: Scroll instantly to the saved link on page load
+  $(function () {
+    const activeLink = localStorage.getItem('activeLink');
+    if (!activeLink) return;
+
+    const currentPage = window.location.pathname.split('/').pop();
+
+    const $target = $('.menu-link').filter(function () {
+      return $(this).attr('href') === currentPage;
+    });
+
+    if ($target.length) {
+      // Scroll instantly (no smooth)
+      $target[0].scrollIntoView({ behavior: 'auto', block: 'center' });
+
+      // Clear after use for next visit
+      localStorage.removeItem('activeLink');
+    }
+  });
+})(jQuery);
+
+    
+    
 
     (function () {
         // Get the values from the sold and plafond spans
@@ -33,17 +73,17 @@ $(document).ready(function () {
         $('#ceil-btn').click(function (event) {
             event.preventDefault(); // Prevent default action (like form submission or refresh)
 
-            // Create the popup structure
-            $('body').prepend(`
-                <div id="popup" class="popup-container">
-                    <div class="popup-content">
-                        <div class="popup-left">Left Text</div>
-                        <div class="popup-right">Right Text</div>
-                        <input type="text" class="popup-input" placeholder="Enter text here">
-                        <button class="close-popup">Close</button>
-                    </div>
-                </div>
-            `);
+//            // Create the popup structure
+//            $('body').prepend(`
+//                <div id="popup" class="popup-container">
+//                    <div class="popup-content">
+//                        <div class="popup-left">Left Text</div>
+//                        <div class="popup-right">Right Text</div>
+//                        <input type="text" class="popup-input" placeholder="Enter text here">
+//                        <button class="close-popup">Close</button>
+//                    </div>
+//                </div>
+//            `);
 
             // Styling for popup
             $('head').append(`
@@ -220,11 +260,6 @@ $(document).ready(function () {
         // Check if the href attribute matches the current page URL
         if (currentUrl.indexOf($(this).attr('href')) !== -1) {
             $(this).addClass('activem'); // Add the active class
-            
-            // Scroll to the active menu item ensuring it's visible
-            $('html, body').animate({
-                scrollTop: $(this).offset().top - $(window).height() + $(this).height() + 20 // Ensure the element is fully visible
-            }, 300); // Scroll duration in milliseconds
         }
     });
 })();
